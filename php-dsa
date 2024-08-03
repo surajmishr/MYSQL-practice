@@ -13,6 +13,22 @@ for ($i = 0; $i < strlen($string); $i++) {
 }
 
 // Add the last number
+
+DSA  Delete PHp 
+$array = ['s','u','r','a','j','m','i','s','h','r','a'];
+      $indexToDelete = 2;
+      $newArray  = [];
+      for($i = 0; $i < count($array); $i++)
+      {
+        if($i != $indexToDelete){
+          $newArray[] = $array[$i];
+        }
+      }
+      $array = $newArray;
+      print_r($rray);
+
+
+
 if ($currentNumber !== "") {
     $array[] = (int)$currentNumber;
 }
