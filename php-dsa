@@ -1,0 +1,21 @@
+<?php
+$string = "1,3,4,5,5";
+$array = [];
+$currentNumber = "";
+
+for ($i = 0; $i < strlen($string); $i++) {
+    if ($string[$i] == ',') {
+        $array[] = (int)$currentNumber;
+        $currentNumber = "";
+    } else {
+        $currentNumber .= $string[$i];
+    }
+}
+
+// Add the last number
+if ($currentNumber !== "") {
+    $array[] = (int)$currentNumber;
+}
+
+print_r($array);
+?>
